@@ -1,4 +1,5 @@
 import './Counter.scss';
+import React from "react";
 
 import Button from "../Button/Button";
 

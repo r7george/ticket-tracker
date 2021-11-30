@@ -9,8 +9,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: $color-background;
 }
 
 h1 {
-  font-size: larger;
+  font-size: 48px;
+  color: $color-text;
 }
