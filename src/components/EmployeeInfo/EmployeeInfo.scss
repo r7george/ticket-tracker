@@ -1,0 +1,11 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.card {
+  &__info {
+    color: $color-text;
+  }
+
+  &__employeeRole {
+    font-style: italic;
+  }
+}

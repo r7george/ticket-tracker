@@ -1,13 +1,12 @@
 import './App.scss';
-// import team from "./data/team";
-import TicketSection from './components/TicketSection/TicketSection';
+import EmployeeInfo from './components/EmployeeInfo/EmployeeInfo';
 
 function App() {
   return (
     <div className="App">
       <h1 className="main-heading">Ticket Tracker</h1>
 
-      <TicketSection />
+      <EmployeeInfo employeeName="Reuben George" employeeRole="Junior Software Developer" />
     </div>
   );
 }
