@@ -1,0 +1,14 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.tickets__button {
+  border-radius: 50%;
+  background-color: $color-button;
+  border: none;
+  width: 25px;
+  height: 25px;
+
+  > i {
+    color: $color-text;
+    
+  }
+}
