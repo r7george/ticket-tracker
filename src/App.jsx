@@ -1,12 +1,15 @@
 import './App.scss';
-import EmployeeInfo from './components/EmployeeInfo/EmployeeInfo';
+
+import Header from './components/Header/Header';
+
+import EmployeeCard from "./components/EmployeeCard/EmployeeCard";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="main-heading">Ticket Tracker</h1>
-
-      <EmployeeInfo employeeName="Reuben George" employeeRole="Junior Software Developer" />
+      
+      <Header />
+      <EmployeeCard employeeName="Reuben George" employeeRole="Junior Software Developer" />
     </div>
   );
 }

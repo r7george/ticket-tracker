@@ -1,0 +1,8 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.main-heading {
+  font-size: 40px;
+  color: $color-text;
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
