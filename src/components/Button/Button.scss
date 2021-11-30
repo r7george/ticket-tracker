@@ -9,6 +9,10 @@
 
   > i {
     color: $color-text;
-    
+    background-color: $color-button;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
