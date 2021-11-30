@@ -1,0 +1,19 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.tickets {
+
+  &__counter {
+    display: flex;
+    background-color: $color-counter;
+    width: 100px;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  &__number {
+    color: $color-text;
+    font-size: 24px;
+  }
+}
