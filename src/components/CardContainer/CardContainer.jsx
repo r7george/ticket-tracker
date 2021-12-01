@@ -3,19 +3,16 @@ import "./CardContainer.scss";
 import team from "../../data/team";
 
 import EmployeeCard from "../EmployeeCard/EmployeeCard";
-import EmployeeInfo from "../EmployeeInfo/EmployeeInfo";
 
 const CardContainter = () => {
-  const names = team.map((person) => {
-    return person.name;
-  });
-  const roles = team.map((person) => {
-    return person.role;
-  });
-
-  for (let i = 0; i < names.length; i++) {
-    return <EmployeeCard employeeName={names[i]} employeeRole={roles[i]} />;
-  }
+  return (
+  <>
+    <div className="container">
+      {team.map((person, index) => {
+        return <EmployeeCard employeeName={person.name} employeeRole={person.role} key={`employee${index}`}/>
+      })}
+    </div>
+  </>)
 }
 
 export default CardContainter;

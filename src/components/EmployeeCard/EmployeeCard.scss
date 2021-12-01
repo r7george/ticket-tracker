@@ -5,7 +5,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 20px;
   border-radius: 10px;
-  margin: 20px 0;
+  margin: 10px;
+  height: 290px;
+
+  &__info {
+    width: 200px;
+  }
+
+  &__employeeName, &__employeeRole {
+    color: $color-text;
+    background-color: $color-card;
+    overflow-wrap: break-word;
+  }
+
+  &__employeeName {
+    font-size: 24px;
+  }
+
+  &__employeeRole {
+    font-style: italic;
+    padding-bottom: 40px;
+  }
 }
