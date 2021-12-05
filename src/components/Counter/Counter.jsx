@@ -4,9 +4,7 @@ import React, {useState} from "react";
 import Button from "../Button/Button";
 
 const Counter = () => {
-  const [counter, setCounter] = useState(() => {
-    return 0;
-  });
+  const [counter, setCounter] = useState(0);
 
   const handleIncrement = () => {
     setCounter(prevCount => prevCount + 1);

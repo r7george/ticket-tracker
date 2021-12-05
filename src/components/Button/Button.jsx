@@ -2,11 +2,17 @@ import React from "react";
 import "./Button.scss";
 
 const Button = ({isPlus, onClick}) => {
+  let buttonClass = "";
+
   if(isPlus === true) {
-    return <button className="tickets__button" onClick={onClick}><i className="fas fa-plus"></i></button>
+    buttonClass="fas fa-plus";
   } else {
-    return <button className="tickets__button" onClick={onClick}><i className="fas fa-minus"></i></button>
+    buttonClass="fas fa-minus";
   }
+
+  return (
+    <button className="tickets__button" onClick={onClick}><i className={buttonClass}></i></button>
+  )
 }
 
 export default Button;
